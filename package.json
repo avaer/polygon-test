@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/avaer/polygon-test/issues"
   },
-  "homepage": "https://github.com/avaer/polygon-test#readme"
+  "homepage": "https://github.com/avaer/polygon-test#readme",
+  "dependencies": {
+    "web3": "^1.3.5"
+  }
 }
