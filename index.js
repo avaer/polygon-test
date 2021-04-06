@@ -37,9 +37,9 @@ async function initNftCache({chainName}) {
   async function getPastEvents({
     chainName = 'polygon',
     contractName = 'NFTProxy',
-    eventName = 'Deposited', // 'allEvents',
-    fromBlock = 0,
-    toBlock = 'latest',
+    eventName = 'Deposited',
+    fromBlock = 12949774, // change to 12950775 and it will hang
+    toBlock =   12950775,
   } = {}) {
     try {
       return await wsContracts[chainName][contractName].getPastEvents(
